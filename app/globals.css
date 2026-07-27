@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 html {
@@ -11,17 +11,17 @@ html {
 }
 
 body {
-  @apply bg-ink-950 text-slate-200 antialiased;
+  @apply bg-paper-50 text-slate-700 antialiased;
   background-image:
-    radial-gradient(70% 50% at 50% -10%, rgba(163, 230, 53, 0.12) 0%, rgba(5, 7, 14, 0) 60%),
+    radial-gradient(70% 50% at 50% -10%, rgba(163, 230, 53, 0.14) 0%, rgba(255, 255, 255, 0) 60%),
     theme("backgroundImage.grid-faint");
   background-size: 100% 100%, 44px 44px;
   background-attachment: fixed, fixed;
 }
 
 ::selection {
-  background: rgba(163, 230, 53, 0.3);
-  color: #e6ffb0;
+  background: rgba(163, 230, 53, 0.28);
+  color: #1a2e05;
 }
 
 @layer components {
@@ -30,27 +30,27 @@ body {
   }
 
   .glass {
-    @apply rounded-2xl border border-white/10 bg-white/[0.03] backdrop-blur-md;
+    @apply rounded-2xl border border-slate-200/70 bg-white/70 backdrop-blur-xl shadow-soft;
   }
 
   .glass-toxic {
-    @apply rounded-2xl border border-toxic-400/20 bg-toxic-400/[0.04];
+    @apply rounded-2xl border border-toxic-400/30 bg-toxic-400/[0.06];
   }
 
   .section-eyebrow {
-    @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.35em] text-toxic-400;
+    @apply inline-flex items-center gap-2 font-mono text-xs uppercase tracking-[0.35em] text-toxic-600;
   }
 
   .section-title {
-    @apply mt-4 text-3xl font-bold tracking-tight text-white sm:text-4xl md:text-5xl;
+    @apply mt-4 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl md:text-5xl;
   }
 
   .gradient-text {
-    @apply bg-gradient-to-br from-toxic-300 via-toxic-400 to-toxic-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-br from-toxic-500 via-toxic-600 to-toxic-700 bg-clip-text text-transparent;
   }
 
   .btn-ghost {
-    @apply inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-slate-200 transition hover:border-toxic-400/60 hover:text-toxic-300;
+    @apply inline-flex items-center gap-2 rounded-full border border-slate-300 px-5 py-2.5 text-sm font-medium text-slate-700 transition hover:border-toxic-400 hover:text-toxic-700;
   }
 
   .btn-toxic {

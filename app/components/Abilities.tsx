@@ -51,10 +51,10 @@ export default function Abilities() {
     <section id="abilities" className="container-narrow py-24">
       <div className="max-w-2xl">
         <span className="section-eyebrow">
-          <span className="h-px w-8 bg-toxic-400/60" /> Combat Kit
+          <span className="h-px w-8 bg-toxic-400/70" /> Combat Kit
         </span>
         <h2 className="section-title">3つのNoxアビリティ</h2>
-        <p className="mt-5 text-sm leading-relaxed text-slate-400">
+        <p className="mt-5 text-sm leading-relaxed text-slate-500">
           すべての能力は「ガスで領域を支配し、敵の視界と呼吸を奪う」という1つの哲学から派生している。
         </p>
       </div>
@@ -63,20 +63,20 @@ export default function Abilities() {
         {ABILITIES.map((a, i) => (
           <article
             key={a.name}
-            className="glass group relative overflow-hidden p-7 transition duration-300 hover:border-toxic-400/40"
+            className="glass group relative overflow-hidden p-7 transition duration-300 hover:border-toxic-400/50"
           >
-            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-toxic-400/5 blur-2xl transition group-hover:bg-toxic-400/10" />
+            <div className="absolute -right-10 -top-10 h-32 w-32 rounded-full bg-toxic-400/10 blur-2xl transition group-hover:bg-toxic-400/20" />
             <div className="relative flex items-center justify-between">
-              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-toxic-400">
+              <span className="font-mono text-[11px] uppercase tracking-[0.3em] text-toxic-600">
                 {a.tag}
               </span>
-              <span className="font-mono text-xs text-slate-600">0{i + 1}</span>
+              <span className="font-mono text-xs text-slate-400">0{i + 1}</span>
             </div>
 
             <div className="relative mt-6">
               <svg
                 viewBox="0 0 24 24"
-                className="h-9 w-9 text-toxic-400"
+                className="h-9 w-9 text-toxic-500"
                 fill="none"
                 stroke="currentColor"
                 strokeWidth="1.6"
@@ -85,11 +85,11 @@ export default function Abilities() {
               </svg>
             </div>
 
-            <h3 className="relative mt-5 text-xl font-bold text-white">{a.name}</h3>
-            <p className="relative font-mono text-xs tracking-[0.2em] text-slate-500">{a.jp}</p>
-            <p className="relative mt-4 text-sm leading-relaxed text-slate-300">{a.desc}</p>
+            <h3 className="relative mt-5 text-xl font-bold text-slate-900">{a.name}</h3>
+            <p className="relative font-mono text-xs tracking-[0.2em] text-slate-400">{a.jp}</p>
+            <p className="relative mt-4 text-sm leading-relaxed text-slate-600">{a.desc}</p>
 
-            <div className="relative mt-6 h-px w-full bg-gradient-to-r from-toxic-400/40 to-transparent" />
+            <div className="relative mt-6 h-px w-full bg-gradient-to-r from-toxic-400/50 to-transparent" />
           </article>
         ))}
       </div>

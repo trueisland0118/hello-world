@@ -7,9 +7,9 @@ const links = [
 
 export default function Navbar() {
   return (
-    <header className="sticky top-0 z-50 border-b border-white/5 bg-ink-950/70 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 border-b border-slate-200/70 bg-white/70 backdrop-blur-xl">
       <nav className="container-narrow flex h-16 items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 font-mono text-sm font-bold tracking-widest text-white">
+        <a href="#top" className="flex items-center gap-2 font-mono text-sm font-bold tracking-widest text-slate-900">
           <span className="grid h-7 w-7 place-items-center rounded-md bg-toxic-400 text-ink-950">
             <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.2">
               <path
@@ -26,7 +26,7 @@ export default function Navbar() {
             <a
               key={l.href}
               href={l.href}
-              className="text-sm text-slate-300 transition hover:text-toxic-300"
+              className="text-sm text-slate-600 transition hover:text-toxic-700"
             >
               {l.label}
             </a>
