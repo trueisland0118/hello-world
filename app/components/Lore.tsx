@@ -23,41 +23,41 @@ const TIMELINE = [
 
 export default function Lore() {
   return (
-    <section id="lore" className="border-y border-white/5 bg-ink-900/40">
+    <section id="lore" className="border-y border-slate-200/70 bg-paper-100/60">
       <div className="container-narrow py-24">
         <div className="grid gap-12 lg:grid-cols-12">
           <div className="lg:col-span-4">
             <span className="section-eyebrow">
-              <span className="h-px w-8 bg-toxic-400/60" /> Backstory
+              <span className="h-px w-8 bg-toxic-400/70" /> Backstory
             </span>
             <h2 className="section-title">科学者から怪物へ</h2>
-            <p className="mt-5 text-sm leading-relaxed text-slate-400">
+            <p className="mt-5 text-sm leading-relaxed text-slate-500">
               アレクサンダー・ノックスは、純粋な探究心と倫理の欠如が合わさった時に生まれる恐怖の体現。
               ガスを支配する者は、空気そのものを武器に変える。
             </p>
 
-            <blockquote className="mt-8 border-l-2 border-toxic-400/60 pl-4">
-              <p className="font-serif italic text-slate-300">
+            <blockquote className="mt-8 border-l-2 border-toxic-400/70 pl-4">
+              <p className="font-serif italic text-slate-700">
                 "This is no place for mercy. Only outcomes."
               </p>
-              <footer className="mt-2 font-mono text-xs tracking-[0.2em] text-slate-500">
+              <footer className="mt-2 font-mono text-xs tracking-[0.2em] text-slate-400">
                 — Alexander Nox
               </footer>
             </blockquote>
           </div>
 
           <ol className="relative lg:col-span-8">
-            <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-toxic-400/60 via-white/10 to-transparent" />
+            <div className="absolute left-[7px] top-2 bottom-2 w-px bg-gradient-to-b from-toxic-400/60 via-slate-200 to-transparent" />
             {TIMELINE.map((t) => (
               <li key={t.title} className="relative mb-10 pl-10 last:mb-0">
-                <span className="absolute left-0 top-1.5 grid h-3.5 w-3.5 place-items-center rounded-full bg-ink-950 ring-2 ring-toxic-400">
-                  <span className="h-1.5 w-1.5 rounded-full bg-toxic-400" />
+                <span className="absolute left-0 top-1.5 grid h-3.5 w-3.5 place-items-center rounded-full bg-white ring-2 ring-toxic-500">
+                  <span className="h-1.5 w-1.5 rounded-full bg-toxic-500" />
                 </span>
-                <div className="font-mono text-[11px] uppercase tracking-[0.3em] text-toxic-400">
+                <div className="font-mono text-[11px] uppercase tracking-[0.3em] text-toxic-600">
                   {t.year}
                 </div>
-                <h3 className="mt-1 text-lg font-semibold text-white">{t.title}</h3>
-                <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-400">
+                <h3 className="mt-1 text-lg font-semibold text-slate-900">{t.title}</h3>
+                <p className="mt-2 max-w-xl text-sm leading-relaxed text-slate-600">
                   {t.body}
                 </p>
               </li>

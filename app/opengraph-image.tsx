@@ -16,9 +16,9 @@ export default function OpenGraphImage() {
           flexDirection: "column",
           justifyContent: "space-between",
           padding: "72px 88px",
-          backgroundColor: "#05070e",
+          backgroundColor: "#f8fafc",
           backgroundImage:
-            "radial-gradient(60% 70% at 80% 20%, rgba(163,230,53,0.22) 0%, rgba(5,7,14,0) 60%)",
+            "radial-gradient(60% 70% at 80% 20%, rgba(163,230,53,0.28) 0%, rgba(255,255,255,0) 60%)",
           fontFamily: "sans-serif",
         }}
       >
@@ -30,11 +30,11 @@ export default function OpenGraphImage() {
             gap: "16px",
             fontSize: "20px",
             letterSpacing: "8px",
-            color: "#a3e635",
+            color: "#65a30d",
             textTransform: "uppercase",
           }}
         >
-          <div style={{ width: "48px", height: "2px", background: "#a3e635" }} />
+          <div style={{ width: "48px", height: "2px", background: "#65a30d" }} />
           Apex Legends · Legend Dossier
         </div>
 
@@ -47,7 +47,7 @@ export default function OpenGraphImage() {
               lineHeight: 1,
               letterSpacing: "-6px",
               backgroundImage:
-                "linear-gradient(135deg, #c4ff4f 0%, #a3e635 45%, #65a30d 100%)",
+                "linear-gradient(135deg, #84cc16 0%, #65a30d 50%, #4d7c0f 100%)",
               backgroundClip: "text",
               color: "transparent",
             }}
@@ -58,7 +58,7 @@ export default function OpenGraphImage() {
             style={{
               marginTop: "18px",
               fontSize: "32px",
-              color: "#94a3b8",
+              color: "#64748b",
               letterSpacing: "6px",
               textTransform: "uppercase",
             }}
@@ -73,16 +73,16 @@ export default function OpenGraphImage() {
             display: "flex",
             alignItems: "center",
             justifyContent: "space-between",
-            borderTop: "1px solid rgba(255,255,255,0.08)",
+            borderTop: "1px solid rgba(15,23,42,0.08)",
             paddingTop: "28px",
           }}
         >
-          <div style={{ display: "flex", gap: "28px", fontSize: "20px", color: "#cbd5e1" }}>
+          <div style={{ display: "flex", gap: "28px", fontSize: "20px", color: "#475569" }}>
             <span>
-              <span style={{ color: "#a3e635" }}>ROLE</span>　防衛 / トラッパー
+              <span style={{ color: "#65a30d" }}>ROLE</span>　防衛 / トラッパー
             </span>
             <span>
-              <span style={{ color: "#a3e635" }}>GAS</span>　Nox 物質
+              <span style={{ color: "#65a30d" }}>GAS</span>　Nox 物質
             </span>
           </div>
           <div
@@ -91,7 +91,7 @@ export default function OpenGraphImage() {
               alignItems: "center",
               gap: "10px",
               fontSize: "18px",
-              color: "#a3e635",
+              color: "#65a30d",
               letterSpacing: "3px",
             }}
           >
@@ -100,8 +100,7 @@ export default function OpenGraphImage() {
                 width: "10px",
                 height: "10px",
                 borderRadius: "50%",
-                background: "#a3e635",
-                boxShadow: "0 0 8px 2px rgba(163,230,53,0.7)",
+                background: "#65a30d",
               }}
             />
             NOX_VARIANT // STABLE

@@ -27,11 +27,11 @@ export default function Tips() {
       <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
         <div>
           <span className="section-eyebrow">
-            <span className="h-px w-8 bg-toxic-400/60" /> Field Manual
+            <span className="h-px w-8 bg-toxic-400/70" /> Field Manual
           </span>
           <h2 className="section-title">実戦プレイングの要点</h2>
         </div>
-        <p className="max-w-sm text-sm leading-relaxed text-slate-400">
+        <p className="max-w-sm text-sm leading-relaxed text-slate-500">
           力ではなく、位置で勝つ。コースティック玩家的「100%即時ダメージ」より「30秒の制圧」を選ぶこと。
         </p>
       </div>
@@ -40,12 +40,12 @@ export default function Tips() {
         {TIPS.map((tip) => (
           <div
             key={tip.n}
-            className="glass-toxic flex gap-5 p-6 transition hover:bg-toxic-400/[0.07]"
+            className="glass-toxic flex gap-5 p-6 transition hover:bg-toxic-400/[0.10]"
           >
-            <div className="font-mono text-2xl font-bold text-toxic-400/40">{tip.n}</div>
+            <div className="font-mono text-2xl font-bold text-toxic-500/60">{tip.n}</div>
             <div>
-              <h3 className="text-base font-semibold text-white">{tip.t}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-slate-300">{tip.b}</p>
+              <h3 className="text-base font-semibold text-slate-900">{tip.t}</h3>
+              <p className="mt-2 text-sm leading-relaxed text-slate-600">{tip.b}</p>
             </div>
           </div>
         ))}
